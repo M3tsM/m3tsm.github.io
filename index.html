@@ -5,18 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HudaWaNour</title>
     <style>
-        /* Basic reset */
+        /* Basic reset and layout */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        /* Radio link style */
+        .radio-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #1d3557;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .radio-link:hover {
+            background-color: #457b9d;
+        }
+
+        /* Centered image styling */
+        .center-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0; /* Optional: change background color */
+            height: 100%;
         }
 
-        /* Style for the image */
         img {
             max-width: 100%;
             max-height: 100%;
@@ -25,7 +50,14 @@
     </style>
 </head>
 <body>
-    <!-- Replace 'logo.jpg' with your actual image file name -->
-    <img src="logo.jpg" alt="Logo">
+    <!-- Radio link -->
+    <a class="radio-link" href="https://online.radiohudawanour.com/listen/hudawanour/live" target="_blank">
+        🎧 Listen Live
+    </a>
+
+    <!-- Centered logo -->
+    <div class="center-container">
+        <img src="logo.jpg" alt="Logo">
+    </div>
 </body>
 </html>
